@@ -1,0 +1,535 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+:root {
+	--primary-color: #fff;
+	--secondary-color: #000;
+	--tertiary-color: #64a19d;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Varela Round", sans-serif;
+}
+
+/* Header */
+header {
+	padding: 1.5%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header .nav-mobile {
+	display: none;
+}
+
+header h1 {
+	font-size: 120%;
+}
+
+header .nav ul {
+	list-style: none;
+	display: flex;
+}
+
+header .nav ul li {
+	margin: 0 30px;
+}
+
+header .nav ul li a {
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-size: 100%;
+}
+
+/* Banner */
+.banner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner .banner-top {
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.5) 0%,
+			rgba(0, 0, 0, 0.7) 75%,
+			rgb(0, 0, 0) 100%
+		),
+		url(../assets/img/bg-masthead.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.banner .banner-top .heading,
+.paraphase {
+	width: 50%;
+	text-align: center;
+	padding: 1%;
+	color: #fff;
+}
+
+.banner .banner-top .heading {
+	margin-top: 10%;
+	font-size: 50px;
+	background: linear-gradient(
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.3)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: "Varela Round", sans-serif;
+	padding-top: 30px;
+}
+
+.banner .paraphase p {
+	font-size: 110%;
+	background: linear-gradient(
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.5)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+.banner .btn-get {
+	margin-top: 40px;
+	padding: 20px 40px;
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+	border: 1px solid var(--tertiary-color);
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.banner .banner-bottom {
+	background: linear-gradient(
+		to bottom,
+		#000 0%,
+		rgba(0, 0, 0, 0.9) 75%,
+		rgba(0, 0, 0, 0.8) 100%
+	);
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	flex-direction: column;
+	width: 100%;
+}
+
+.banner .banner-bottom .banner-content {
+	width: 50%;
+	text-align: center;
+	padding-top: 10%;
+}
+
+.banner .banner-bottom .banner-content h1 {
+	font-size: 200%;
+	color: #fff;
+	padding: 2%;
+}
+
+.banner .banner-bottom .banner-content p {
+	font-size: 110%;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* Content */
+.content {
+	background-color: var(--primary-color);
+	padding: 5% 10%;
+}
+
+.content .main-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5%;
+}
+
+
+.content .main-content .flex-item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 5%;
+}
+
+.content .main-content .flex-item img {
+	width: 60%;
+}
+
+.content .main-content .flex-item .text-item-1 {
+	width: 40%;
+	padding: 1%;
+	border-left: 10px solid var(--tertiary-color);
+	height: fit-content;
+	text-align: center;
+}
+
+.content .main-content .flex-item .text-item-1 h3 {
+	font-size: 150%;
+	padding: 2%;
+}
+
+.content .main-content .flex-item .text-item-1 p {
+	font-size: 100%;
+	color: rgba(0, 0, 0, 0.5);
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+.content .main-content .grid {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	padding: 5%;
+	/* Grid gap bottom  */
+	grid-gap: 10 0;
+}
+
+.content .main-content .grid img {
+	width: 100%;
+	height: 80%;
+}
+
+.content .main-content .grid .text-item-2,
+.content .main-content .grid .text-item-3 {
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10%;
+	text-align: center;
+}
+
+
+.content .main-content .grid .text-item-2 h3,
+.content .main-content .grid .text-item-3 h3 {
+	font-size: 130%;
+	padding: 2%;
+}
+
+.content .main-content .grid .text-item-2 p,
+.content .main-content .grid .text-item-3 p {
+	font-size: 80%;
+	color: rgba(255, 255, 255, 0.5);
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+
+/* Footer */
+footer {
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.1) 0%,
+			rgba(0, 0, 0, 0.5) 75%,
+			#000 100%
+		),
+		url(../assets/img/bg-signup.jpg);
+	padding: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+footer .group {
+	width: 100%;
+}
+
+footer .logo {
+	color: var(--primary-color);
+	text-align: center;
+	font-size: 150%;
+}
+
+footer .input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2%;
+}
+
+footer .input input {
+	width: 30%;
+	padding: 1%;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+}
+
+footer .input button {
+	padding: 1%;
+	background-color: #64a19de0;
+	color: var(--primary-color);
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	margin-left: 2%;
+}
+
+.copyright {
+	background: black;
+	text-align: center;
+	font-size: 80%;
+	padding: 2%;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive for mobile */
+/* For header */
+@media screen and (max-width: 768px) {
+	header {
+		justify-content: space-between;
+		padding: 5% 5%;
+	}
+
+	header .logo {
+		width: 70%;
+	}
+
+	header .nav {
+		display: none;
+	}
+
+	header .nav-mobile {
+		display: block;
+		width: 20%;
+	}
+
+	header .nav-mobile button {
+		padding: 10%;
+		background-color: #fff;
+		color: var(--tertiary-color);
+		border: 1px solid var(--tertiary-color);
+		border-radius: 5px;
+	}
+
+	.banner .banner-top {
+		padding-top: 50%;
+	}
+
+	.banner .banner-top h1 {
+		font-size: 100%;
+	}
+
+	.banner .banner-top .heading,
+	.banner .banner-top .paraphase {
+		width: 90%;
+	}
+
+	.banner .banner-bottom .banner-content {
+		width: 80%;
+	}
+
+	.content .main-content {
+		padding: 50% 0;
+	}
+
+	.content .main-content .flex-item {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.content .main-content .flex-item img {
+		width: 100%;
+	}
+
+	.content .main-content .flex-item .text-item-1 {
+		width: 100%;
+		border-left: none;
+		padding: 5%;
+		margin-top: 5%;
+	}
+
+	.content .main-content .flex-item .text-item-1 h3 {
+		font-size: 120%;
+		font-weight: 500;
+	}
+
+	.content .main-content .flex-item .text-item-1 p {
+		font-size: 90%;
+		font-weight: 500;
+	}
+
+    .content .main-content .grid {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5%;
+        /* Grid gap bottom  */
+        grid-gap: 10 0;
+    }
+
+    .grid-item-2{
+        margin-top: 30%;
+    }
+
+    .content .main-content .grid img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content .main-content .grid .text-item-2 {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+        text-align: center;
+    }
+
+    .content .main-content .grid .text-item-3 {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+        text-align: center;
+    }
+
+    .content .main-content .grid .text-item-3{
+        grid-column: 1 / 2;
+        grid-row: 4 / 4 ;
+    }
+
+    footer {
+        background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.1) 0%,
+                rgba(0, 0, 0, 0.5) 75%,
+                #000 100%
+            ),
+            url(../assets/img/bg-signup.jpg);
+        padding: 10%;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;
+    }
+
+    footer .group {
+        width: 100%;
+    }
+
+    footer .logo {
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 150%;
+    }
+
+    footer .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    footer .input input {
+        width: 50%;
+        height: 3rem;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        box-shadow: 0 0.1875rem 0.1875rem 0 rgb(0 0 0 / 10%) !important;
+    }
+
+    footer .input button {
+        height: 3rem;
+        width: 50%;
+        background: #64a19d;
+        color: var(--primary-color);
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-left: 10%;
+    }
+
+    .copyright {
+        background: black;
+        text-align: center;
+        font-size: 80%;
+        padding: 10%;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+
+    /* Dropdown */
+    .dropdown {
+        position: absolute;
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown ul {
+        border-radius: 5px ;
+        background-color: #64a19d;
+        list-style: none;
+        padding: 0;
+        margin-top: 5px;
+        width: 150%;
+    }
+
+    .dropdown ul li {
+        padding: 10px;
+    }
+
+    .dropdown a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* When click button show dropdown */
+    .nav-mobile:hover .dropdown {
+        display: block;
+    }
+
+}
